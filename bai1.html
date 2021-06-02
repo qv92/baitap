@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function sapXep(a){
+    for (let i = 0; i < a.length-1; i++) {
+        for ( let j=i+1;j<a.length;j++){
+        if (a[i]>a[j]){
+            let temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+        }
+    }
+    return a
+    }
+    let arr1=[-1,5,3,-1,4,5,7,8,-2,-6];
+    document.write(sapXep(arr1)+"<br>")
+document.write("diem thi cao thu 3 la "+arr1[arr1.length-3])
+    //document.write(min(arr))
+</script>
+</body>
+</html>
